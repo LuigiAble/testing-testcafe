@@ -9,14 +9,16 @@ export default class DashboardPage {
         this.viewInvestmentModalButton = Selector('.btn.Button.Button--default.Button--primary').child('span').withText('View Investment');
     };
 
-    async goToCreateHoldingForm() {
+    async goToCreateHoldingFormulario() {
         await t
             .click(this.addInvestmentButton)
             .click(this.newHoldingButton);
+        console.log(this.addInvestmentButton);
     };
 
     async goToHoldingView() {
         await t
             .click(this.viewInvestmentModalButton);
+        console.error(log);
     };
 };
