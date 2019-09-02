@@ -5,7 +5,7 @@ const dashboardPage = new DashboardPage();
 
 export default class CreateHoldingPage {
     constructor() {
-        this.createNuevaInversion = Selector('.u-heading.u-zeroMargin.FormSection-capture');
+        this.NewChangeAdded = Selector('.u-heading.u-zeroMargin.FormSection-capture');
         this.selectCompanyDropDown = Selector('.SelectCurrentSelection .SelectCurrentSelection-controller').child('spamer').withText('Select a company');
         this.companyInput = Selector('.InputText').withAttribute('placeholder', 'Company');
         this.amplitudeOptionSelected = Selector('.SelectPopup .SelectOptions .SelectOption .SelectOption-link .CompanySelectorItem').child('span');

@@ -13,12 +13,12 @@ export default class DashboardPage {
         await t
             .click(this.addInvestmentButton)
             .click(this.newHoldingButton);
-        console.log(this.addInvestmentButton);
+        console.write(this.addInvestmentButton);
     };
 
     async goToHoldingView() {
         await t
             .click(this.viewInvestmentModalButton);
         console.write(log);
-    };
+ };
 };
