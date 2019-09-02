@@ -2,7 +2,7 @@ import { Selector, t } from 'testcafe';
 
 export default class DashboardPage {
     constructor() {
-        this.addInvestmentButton = Selector('.u-displayInlineBlock .Button--secondary').child('span').withText('Add New...');
+        this.addInvestmentButtonPeru = Selector('.u-displayInlineBlock .Button--secondary').child('span').withText('Add New...');
         this.newHoldingButton = Selector('.DropdownMenuItem-anchor').withText('New Holding');
         this.isSuccessAlert = Selector('.Alert-body');
         this.investmentModal = Selector('.ModalBody.ModalBody--announcement').child('h1');
@@ -19,6 +19,6 @@ export default class DashboardPage {
     async goToHoldingView() {
         await t
             .click(this.viewInvestmentModalButton);
-        console.error(log);
+        console.write(log);
     };
 };
