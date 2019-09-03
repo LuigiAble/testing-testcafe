@@ -5,5 +5,6 @@ export default class LoginPage {
         this.emailAddressInput = Selector('.InputText').withAttribute('name', 'emailInput');
         this.passwordInput = Selector('.InputText').withAttribute('name', 'passwordInput');
         this.loginButton = Selector('.LoginAnimatedElement').withAttribute('type', 'submit');
+        console.log("Los rechickens")
     };
 }
